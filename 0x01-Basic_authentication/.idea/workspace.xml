@@ -5,35 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aaca2b2f-1654-4a65-b4f4-2b3a34b945ab" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/0x01-Basic_authentication.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/v1/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/v1/app.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/v1/auth/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/v1/auth/auth.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/v1/auth/basic_auth.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/v1/views/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/v1/views/index.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/v1/views/users.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main0.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main_1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main_100.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main_2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main_3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main_4.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main_5.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main_6.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/base.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/user.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/v1/auth/basic_auth.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/v1/auth/basic_auth.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/v1/views/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/v1/views/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/v1/views/index.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/v1/views/index.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
