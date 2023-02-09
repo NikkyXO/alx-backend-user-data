@@ -6,12 +6,18 @@
   <component name="ChangeListManager">
     <list default="true" id="aaca2b2f-1654-4a65-b4f4-2b3a34b945ab" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/v1/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/v1/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/v1/auth/auth.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/v1/auth/auth.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/v1/views/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/v1/views/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/v1/views/index.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/v1/views/index.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/v1/views/users.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/v1/views/users.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/user.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/user.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/v1/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/v1/app.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/v1/auth/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/v1/auth/auth.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/v1/auth/basic_auth.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/v1/views/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/v1/views/index.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/v1/views/users.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/base.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/user.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

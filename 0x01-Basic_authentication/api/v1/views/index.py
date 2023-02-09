@@ -2,7 +2,7 @@
 """ Module of Index views
 """
 from flask import jsonify, abort
-from . import app_views
+from api.v1.views import app_views
 
 
 @app_views.route('/unauthorized', methods=['GET'], strict_slashes=False)
@@ -39,5 +39,6 @@ def stats() -> str:
       - the number of each objects
     """
     from models.user import User
-    _stats = {'users': User.count()}
-    return jsonify(_stats)
+    stats = {}
+    stats['users'] = User.count()
+    return jsonify(stats)
