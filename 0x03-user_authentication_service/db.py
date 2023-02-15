@@ -18,9 +18,8 @@ class DB:
     def __init__(self) -> None:
         """Initialize a new DB instance
         """
-        self._engine = \
-            create_engine("mysql+mysqldb://root:410208olA$$$@localhost/a_db",
-                          echo=True)
+        # set echo to false  not  to see QUERY STATEMENT output
+        self._engine = create_engine("sqlite:///a.db", echo=False)
         Base.metadata.drop_all(self._engine)
         Base.metadata.create_all(self._engine)
         self.__session = None
@@ -35,6 +34,8 @@ class DB:
         return self.__session
 
     def add_user(self, email: str, hashed_password: str) -> User:
+        """Add a user to the database
+        """
         if email and hashed_password:
             user = User(email=email, hashed_password=hashed_password)
             db = self._session
@@ -43,6 +44,8 @@ class DB:
             return user
 
     def find_user_by(self, **kwargs) -> User:
+        """Find a user by keyword arguments
+        """
         if not kwargs:
             raise InvalidRequestError("Invalid")
 
@@ -54,7 +57,8 @@ class DB:
         return user
 
     def update_user(self, user_id: int, **kwargs) -> None:
-
+        """Update a user by keyword arguments
+        """
         user = self.find_user_by(id=user_id)
 
         db = self._session

@@ -33,15 +33,17 @@ def register():
 
 
 @app.route('/sessions', methods=['POST'], strict_slashes=False)
-def login():
-    email = request.form['email']
-    password = request.form['password']
-
-    try:
-        is_valid = AUTH.valid_login(email, password)
-        if is_valid:
-            return jsonify(email=email, message="logged in"), 200
-    except ValueError:
+def login() -> dict:
+    """Login user"""
+    email = request.form.get('email')
+    password = request.form.get('password')
+    valid_login = AUTH.valid_login(email, password)
+    if valid_login:
+        session_id = AUTH.create_session(email)
+        response = jsonify({"email": email, "message": "logged in"})
+        response.set_cookie('session_id', session_id)
+        return response
+    else:
         abort(401)
 
 
@@ -52,7 +54,6 @@ def logout():
     :return: redirect url
     """
     session_id = request.cookies.get('session_id')
-
     user = AUTH.get_user_from_session_id(session_id)
     if user:
         AUTH.destroy_session(user.id)

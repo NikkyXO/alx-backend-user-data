@@ -2,13 +2,16 @@
 """
 User Module
 """
-from base import Base
+from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy import (
     Column, String, Integer)
 
 
-class User(Base):
+Base = declarative_base()
 
+
+class User(Base):
+    """User Class"""
     __tablename__ = "users"
 
     id = Column(Integer, primary_key=True)
