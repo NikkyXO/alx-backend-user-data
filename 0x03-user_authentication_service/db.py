@@ -16,7 +16,9 @@ class DB:
     def __init__(self) -> None:
         """Initialize a new DB instance
         """
-        self._engine = create_engine("mysql+mysqldb://root:410208olA$$$@localhost/a_db", echo=True)
+        self._engine = \
+            create_engine("mysql+mysqldb://root:410208olA$$$@localhost/a_db",
+                          echo=True)
         Base.metadata.drop_all(self._engine)
         Base.metadata.create_all(self._engine)
         self.__session = None
@@ -55,12 +57,10 @@ class DB:
 
         db = self._session
         for key, val in kwargs.items():
-            if key not in ["id", "email", "hashed_password", "session_id", "reset_token"]:
+            if key not in ["id", "email", "hashed_password",
+                           "session_id", "reset_token"]:
                 raise ValueError("Invalid")
             setattr(user, key, val)
         db.add(user)
         db.commit()
         return None
-
-
-

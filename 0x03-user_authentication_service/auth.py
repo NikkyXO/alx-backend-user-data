@@ -57,7 +57,8 @@ class Auth:
         """
         try:
             user_exists = self._db.find_user_by(email=email)
-            return bcrypt.checkpw(password.encode(), user_exists.hashed_password)
+            return bcrypt.checkpw(password.encode(),
+                                  user_exists.hashed_password)
         except NoResultFound:
             return False
 
@@ -93,7 +94,7 @@ class Auth:
         except NoResultFound:
             return None
 
-    def get_reset_password_token(self, email: str)-> str:
+    def get_reset_password_token(self, email: str) -> str:
         """
         generates a UUID and updates user's reset_token database field
         :param email: user's email
@@ -107,14 +108,10 @@ class Auth:
         self._db.update_user(user.id, reset_token=reset_token)
         return reset_token
 
-    def update_password(self, reset_token: str, password: str)-> None:
+    def update_password(self, reset_token: str, password: str) -> None:
         user = self._db.find_user_by(reset_token=reset_token)
         if not user:
             raise ValueError()
         hashed_pwd = _hash_password(password)
-        self._db.update_user(user.id, hashed_password=hashed_pwd, reset_token=None)
-
-
-
-
-
+        self._db.update_user(user.id, hashed_password=hashed_pwd,
+                             reset_token=None)
