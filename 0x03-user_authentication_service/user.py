@@ -1,7 +1,10 @@
+#!/usr/bin/env python3
+"""
+User Module
+"""
 from base import Base
 from sqlalchemy import (
-    Column, String, DATETIME, ForeignKey, Integer
-)
+    Column, String, Integer)
 
 
 class User(Base):

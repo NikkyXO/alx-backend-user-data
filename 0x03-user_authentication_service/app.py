@@ -1,3 +1,7 @@
+#!/usr/bin/env python3
+"""
+Main flask app
+"""
 from flask import (
     Flask, request, jsonify, abort, redirect, url_for
 )
